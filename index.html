@@ -94,7 +94,10 @@
 <div class="modal" id="stHistoryModal"><div class="modal-bg" onclick="closeMod('stHistoryModal')"></div><div class="modal-box" style="max-width:700px"><div class="modal-head"><h3>📜 History</h3><button class="modal-close" onclick="closeMod('stHistoryModal')">✕</button></div><div class="modal-body" id="stHistoryBody"></div></div></div>
 <div class="modal" id="custModal"><div class="modal-bg" onclick="closeMod('custModal')"></div><div class="modal-box"><div class="modal-head"><h3>👤 Customer</h3><button class="modal-close" onclick="closeMod('custModal')">✕</button></div><div class="modal-body" id="custModalBody"></div></div></div>
 <div id="printReceipt"><button class="close-preview no-print" onclick="closePreview()">✕</button><div class="receipt" id="receiptContent"></div><div class="no-print" style="padding:16px;display:flex;gap:10px;justify-content:center"><button class="btn btn-primary" onclick="doPrint()">🖨️ Print</button><button class="btn btn-ghost" onclick="closePreview()">Close</button></div></div>
-KYBmgUNr1EB0ztZA_M0ndnNUMki74Qf5Hhg88J4gp_U';
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL='https://spqdsdgcsjusosnzkfwm.supabase.co';
+const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwcWRzZGdjc2p1c29zbnprZndtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg3MDIzNzQsImV4cCI6MjA4NDI3ODM3NH0.KYBmgUNr1EB0ztZA_M0ndnNUMki74Qf5Hhg88J4gp_U';
 const supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
 const SHOP_NAME='EVERYTINROOM',SHOP_TAGLINE='& BEDTIME',SHOP_PHONE='0551234567',SHOP_ADDRESS='Accra, Ghana';
 const $=id=>document.getElementById(id),n=v=>parseFloat(v)||0,m=v=>'GHS '+n(v).toFixed(2);
